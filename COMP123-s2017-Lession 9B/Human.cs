@@ -18,7 +18,7 @@ namespace COMP123_s2017_Lession_9B
         private string _name;
 
         //Public properties
-        public string Name
+        public string Name 
         {
             get
             {

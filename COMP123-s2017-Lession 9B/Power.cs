@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bishnu Khanal
  * Date: July 11, 2017
  * Description: This is the Power class
- * Version:0.1 - Created the Power class
+ * Version:0.2 - Added a constructor
  */
 namespace COMP123_s2017_Lession_9B
 {
@@ -14,8 +14,22 @@ namespace COMP123_s2017_Lession_9B
     /// </summary>
     public class Power
     {
-        //Publci properties
+        //Public properties
         public string Name { get; set; }
         public int Rank { get; set; }
+
+        //Public properties
+
+        /// <summary>
+        /// This is a main constructor for the Power class
+        /// It takes two arguments - name(string) -rank(int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public Power(string name, int rank)
+        {
+            this.Name = name;
+            this.Rank = rank;
+        }
     }
 }

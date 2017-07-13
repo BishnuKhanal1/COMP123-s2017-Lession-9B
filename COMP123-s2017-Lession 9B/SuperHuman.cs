@@ -17,7 +17,13 @@ namespace COMP123_s2017_Lession_9B
         //Private instant variables
         private List<Power> _powers;
         //Public properties
-
+        public List <Power> Powers
+        {
+            get
+            {
+                return this._powers;
+            }
+        }
         //Constructor
         /// <summary>
         /// This is the main constructor for the SuperHuman class.

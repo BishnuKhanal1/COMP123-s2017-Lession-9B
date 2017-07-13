@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bishnu Khanal
  * Date: July 11, 2017
  * Description: This is the SuperHuman class that extends the Human abstract class
- * Version:0.2 - Added _initialized method
+ * Version:0.3 - Added a Power Method
  */
 namespace COMP123_s2017_Lession_9B
 {
@@ -44,5 +44,16 @@ namespace COMP123_s2017_Lession_9B
             this._powers = new List<Power>();//creates an empty list
         }
         //Public Methods
+
+            /// <summary>
+            /// This method adds a power to the power list
+            /// It takes two parameters- name(string)- rank(int) 
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="rank"></param>
+        public void AddPower(string name, int rank)
+        {
+            this.Powers.Add(new Power(name, rank));
+        }
     }
 }

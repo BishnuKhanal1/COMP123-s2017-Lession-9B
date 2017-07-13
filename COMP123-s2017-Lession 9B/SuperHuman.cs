@@ -55,5 +55,15 @@ namespace COMP123_s2017_Lession_9B
         {
             this.Powers.Add(new Power(name, rank));
         }
+        /// <summary>
+        /// This method displays each of the power listed in Power list
+        /// </summary>
+        public void DisplayPowers()
+        {
+            foreach (Power power in this.Powers)
+            {
+                Console.WriteLine("Power: " + power.Name + "Rank: "+ power.Rank );
+            }
+        }
     }
 }
